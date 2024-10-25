@@ -75,9 +75,8 @@
                         </video>
                         <div class="container">
                             <div class="slider-one__content text-center">
-                                <p class="anim-elm">ARİ SHIPYARD İLE TANIŞIN</p>
+                                <p class="anim-elm">ARI SHIPYARD İLE TANIŞIN</p>
                                 <h3 class="anim-elm">Denizlerde Güven ve Dayanıklılık  <br> İnşa Ediyoruz</h3>
-                                <a href="#" class="thm-btn anim-elm">NEDEN BİZ?</a><!-- /.thm-btn -->
                             </div><!-- /.slider-one__content text-center -->
                         </div><!-- /.container -->
                     </div><!-- /.item -->
@@ -101,9 +100,15 @@
             <div class="container">
                 <img src="assets/images/shapes/slide-ribbon-1-1.png" alt="" class="cta-two__moc">
                 <h3>Güvenilir Çözümlerle Denizlere <span>Güç Katıyoruz!</span></h3>
-                <div class="cta-two__btn-block">
-                    <a href="#" class="thm-btn cta-two__btn">BİZE KATILIN!</a><!-- /.thm-btn cta-two__btn -->
-                </div><!-- /.cta-two__btn-block -->
+                <a href="#" class="thm-btn cta-two__btn" onclick="openPopup()">Neden Biz?</a>
+
+                <!-- Fotoğraf Popup Modal -->
+                <div id="popup" class="popup-overlay">
+                  <div class="popup-content">
+                    <button class="close-btn" onclick="closePopup()">×</button>
+                    <img src="assets/images/resources/nedenbiz.jpg" alt="Popup Image" class="popup-image">
+                  </div>
+                </div>
             </div><!-- /.container -->
         </section><!-- /.cta-two -->
 
@@ -166,13 +171,13 @@
 
         <section class="funfact-one funfact-one__home-one">
             <div class="container">
-                <div class="funfact-one__title">METRİKLER</div><!-- /.funfact-one__title -->
+                <div class="funfact-one__title">MILESTONES</div><!-- /.funfact-one__title -->
                 <div class="inner-container">
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="funfact-one__single">
                                 <div class="funfact-one__count counter">
-                                    169
+                                    40
                                 </div><!-- /.funfact-one__count -->
                                 <div class="funfact-one__content">
                                     <h3>RESTORE EDİLEN <br> GEMİ</h3>
@@ -182,7 +187,7 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="funfact-one__single">
                                 <div class="funfact-one__count counter">
-                                    8620
+                                    471
                                 </div><!-- /.funfact-one__count -->
                                 <div class="funfact-one__content">
                                     <h3>MUTLU <br>
@@ -193,7 +198,7 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="funfact-one__single">
                                 <div class="funfact-one__count counter">
-                                    70
+                                    200
                                 </div><!-- /.funfact-one__count -->
                                 <div class="funfact-one__content">
                                     <h3>PROFESYONEL <br> EKİP ÜYESİ</h3>
@@ -267,7 +272,7 @@
                             </div><!-- /.course-one__image -->
                             <div class="course-one__content hvr-sweep-to-bottom">
                                 <h3><a href="#">Yeni İnşa</a></h3>
-                                <p>NB40 | 3900 CBM Canlı Balık Taşıyıcı Gemisinin inşaatı başarıyla tamamlandı.</p>
+                                <p>NB40 | 3900 CBM Live Fish Carrier Gemisinin inşaatı başarıyla tamamlandı.</p>
                             </div><!-- /.course-one__content -->
                             <a href="#" class="course-one__book-link">Bizimle İletişime Geç</a>
                         </div><!-- /.course-one__single -->
@@ -315,7 +320,15 @@
                                 <h3 class="text-uppercase">Çevre ve sürdürülebilirlik</h3>
                             </div><!-- /.block-title -->
                             <p>Denizcilik sektöründe çevreye duyarlı çözümler sunuyoruz. <br> Sürdürülebilir üretim ve enerji verimliliğiyle <br> doğayı korumaya öncelik veriyoruz.</p>
-                            <a href="#" class="thm-btn video-two__btn">Çözümlerimizi Keşfedin!</a>
+                            <a href="#" class="thm-btn cta-two__btn" onclick="openPopup()" style="margin-top: 20px;">Çözümlerimizi Keşfedin?</a>
+
+                            <!-- Fotoğraf Popup Modal -->
+                            <div id="popup" class="popup-overlay">
+                              <div class="popup-content">
+                                <button class="close-btn" onclick="closePopup()">×</button>
+                                <img src="assets/images/resources/nedenbiz.jpg" alt="Popup Image" class="popup-image">
+                              </div>
+                            </div>
                             <!-- /.thm-btn video-two__btn -->
                         </div><!-- /.video-two__content -->
                     </div><!-- /.col-lg-6 -->
@@ -346,8 +359,22 @@
                             <div class="testimonials-one__content">
                                 <div class="testimonials-one__content-inner">
                                     <div class="testimonials-one__qoute"></div><!-- /.testimonials-one__qoute -->
-                                    <p>Projemizin her aşamasında bize sağlanan profesyonel destek ve zamanında teslimat sayesinde iş planımız aksamadan ilerledi. Kalite ve işçilik beklentilerimizin çok üstündeydi.</p>
-                                    <div class="testimonials-one__infos">
+                                    <p>Gemi yanaşır yanaşmaz mükemmel bir tersane organizasyonu ile tüm işler aynı saat içerisinde hızlı bir şekilde başladı, kusursuz bir planlama ile gerçekten taahüt edilen süre içerisinde tamir periyodumuzu tamamlayabildik. <div class="testimonials-one__infos">
+                                        <div class="testimonials-one__infos-content">
+                                            <h3>Rıfat Göker </h3>
+                                            <span>Mara Marine</span>
+                                        </div><!-- /.testimonials-one__infos-content -->
+                                    </div><!-- /.testimonials-one__infos -->
+                                </div><!-- /.testimonials-one__content-inner -->
+                            </div><!-- /.testimonials-one__content -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__content">
+                                <div class="testimonials-one__content-inner">
+                                    <div class="testimonials-one__qoute"></div><!-- /.testimonials-one__qoute -->
+                                    <p>Fiyat politikalarını ve detaylarını açık bir şekilde sundular, bütçeye paralel bir şekilde tersaneden ayrıldık. Türkiye'deki tersanelere olan güvenimiz artmaya başladı. Teşekkürler Arı Shipyard!<div class="testimonials-one__infos">
                                         <div class="testimonials-one__infos-content">
                                             <h3> Mehmet Yılmaz </h3>
                                             <span>Lira Denizcilik</span>
@@ -362,75 +389,10 @@
                             <div class="testimonials-one__content">
                                 <div class="testimonials-one__content-inner">
                                     <div class="testimonials-one__qoute"></div><!-- /.testimonials-one__qoute -->
-                                    <p>Projemizin her aşamasında bize sağlanan profesyonel destek ve zamanında teslimat sayesinde iş planımız aksamadan ilerledi. Kalite ve işçilik beklentilerimizin çok üstündeydi.</p>
-                                    <div class="testimonials-one__infos">
+                                    <p>Quick Solution kelimesinin lafta olmadığını tecrübe ettikten sonra gerçekten anlayabiliyorsunuz, havuz işlerimizde yaşadığımız problemlere hızlı adımlar atıp hızlıca çözüm ürettiler,  Şiddetle tavsiye edebileceğim bir tersane.<div class="testimonials-one__infos">
                                         <div class="testimonials-one__infos-content">
-                                            <h3> Mehmet Yılmaz </h3>
-                                            <span>Lira Denizcilik</span>
-                                        </div><!-- /.testimonials-one__infos-content -->
-                                    </div><!-- /.testimonials-one__infos -->
-                                </div><!-- /.testimonials-one__content-inner -->
-                            </div><!-- /.testimonials-one__content -->
-                        </div><!-- /.testimonials-one__single -->
-                    </div><!-- /.item -->
-                    <div class="item">
-                        <div class="testimonials-one__single">
-                            <div class="testimonials-one__content">
-                                <div class="testimonials-one__content-inner">
-                                    <div class="testimonials-one__qoute"></div><!-- /.testimonials-one__qoute -->
-                                    <p>Projemizin her aşamasında bize sağlanan profesyonel destek ve zamanında teslimat sayesinde iş planımız aksamadan ilerledi. Kalite ve işçilik beklentilerimizin çok üstündeydi.</p>
-                                    <div class="testimonials-one__infos">
-                                        <div class="testimonials-one__infos-content">
-                                            <h3> Mehmet Yılmaz </h3>
-                                            <span>Lira Denizcilik</span>
-                                        </div><!-- /.testimonials-one__infos-content -->
-                                    </div><!-- /.testimonials-one__infos -->
-                                </div><!-- /.testimonials-one__content-inner -->
-                            </div><!-- /.testimonials-one__content -->
-                        </div><!-- /.testimonials-one__single -->
-                    </div><!-- /.item -->
-                    <div class="item">
-                        <div class="testimonials-one__single">
-                            <div class="testimonials-one__content">
-                                <div class="testimonials-one__content-inner">
-                                    <div class="testimonials-one__qoute"></div><!-- /.testimonials-one__qoute -->
-                                    <p>Projemizin her aşamasında bize sağlanan profesyonel destek ve zamanında teslimat sayesinde iş planımız aksamadan ilerledi. Kalite ve işçilik beklentilerimizin çok üstündeydi.</p>
-                                    <div class="testimonials-one__infos">
-                                        <div class="testimonials-one__infos-content">
-                                            <h3> Mehmet Yılmaz </h3>
-                                            <span>Lira Denizcilik</span>
-                                        </div><!-- /.testimonials-one__infos-content -->
-                                    </div><!-- /.testimonials-one__infos -->
-                                </div><!-- /.testimonials-one__content-inner -->
-                            </div><!-- /.testimonials-one__content -->
-                        </div><!-- /.testimonials-one__single -->
-                    </div><!-- /.item -->
-                    <div class="item">
-                        <div class="testimonials-one__single">
-                            <div class="testimonials-one__content">
-                                <div class="testimonials-one__content-inner">
-                                    <div class="testimonials-one__qoute"></div><!-- /.testimonials-one__qoute -->
-                                    <p>Projemizin her aşamasında bize sağlanan profesyonel destek ve zamanında teslimat sayesinde iş planımız aksamadan ilerledi. Kalite ve işçilik beklentilerimizin çok üstündeydi.</p>
-                                    <div class="testimonials-one__infos">
-                                        <div class="testimonials-one__infos-content">
-                                            <h3> Mehmet Yılmaz </h3>
-                                            <span>Lira Denizcilik</span>
-                                        </div><!-- /.testimonials-one__infos-content -->
-                                    </div><!-- /.testimonials-one__infos -->
-                                </div><!-- /.testimonials-one__content-inner -->
-                            </div><!-- /.testimonials-one__content -->
-                        </div><!-- /.testimonials-one__single -->
-                    </div><!-- /.item -->
-                    <div class="item">
-                        <div class="testimonials-one__single">
-                            <div class="testimonials-one__content">
-                                <div class="testimonials-one__content-inner">
-                                    <div class="testimonials-one__qoute"></div><!-- /.testimonials-one__qoute -->
-                                    <p>Projemizin her aşamasında bize sağlanan profesyonel destek ve zamanında teslimat sayesinde iş planımız aksamadan ilerledi. Kalite ve işçilik beklentilerimizin çok üstündeydi.</p>
-                                    <div class="testimonials-one__infos">
-                                        <div class="testimonials-one__infos-content">
-                                            <h3> Mehmet Yılmaz </h3>
-                                            <span>Lira Denizcilik</span>
+                                            <h3>Erdal Balıkçı</h3>
+                                            <span>RDL Marine</span>
                                         </div><!-- /.testimonials-one__infos-content -->
                                     </div><!-- /.testimonials-one__infos -->
                                 </div><!-- /.testimonials-one__content-inner -->
@@ -450,9 +412,9 @@
                     <div class="cta-three__content-inner">
                         <div class="block-title">
                             <p class="text-uppercase">Gelişim</p>
-                            <h3 class="text-uppercase">Ar-Ge Ve Teknolojilerimiz</h3>
+                            <h3 class="text-uppercase" style="font-size: 3vh;">Ar-Ge Ve Teknolojilerimiz</h3>
                         </div><!-- /.block-title -->
-                        <p>İnovasyon odaklı yaklaşımımızla, ileri teknolojiler geliştiren ve sektörde fark yaratan çözümler sunuyoruz. Ar-Ge faaliyetlerimizle müşterilerimize en modern hizmetleri sağlıyoruz.</p>
+                        <p>İnovasyon odaklı yaklaşımımızla, ileri teknolojiler geliştiren <br>ve sektörde fark yaratan çözümler sunuyoruz. <br>Ar-Ge faaliyetlerimizle müşterilerimize en modern hizmetleri sağlıyoruz.</p>
                         <a href="#" class="thm-btn cta-three__btn">Bizimle İletişime Geçin!</a><!-- /.thm-btn cta-three__btn -->
                     </div><!-- /.cta-three__content-inner -->
                 </div><!-- /.cta-three__content -->
@@ -712,7 +674,13 @@
     <script src="assets/js/TweenMax.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
-
+<script>function openPopup() {
+    document.getElementById("popup").style.display = "block";
+  }
+  
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }</script>
     <!-- Custom Scripts -->
     <script src="assets/js/theme.js"></script>
 </body>
