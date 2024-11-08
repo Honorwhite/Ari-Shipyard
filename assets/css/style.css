@@ -1191,7 +1191,7 @@ a:focus {
 
 .main-nav-two__social {
 	width: 100%;
-	max-width: 227px;
+	max-width: 180px;
 	height: 57px;
 	background-color: var(--thm-primary);
 	display: -webkit-box;
@@ -1214,6 +1214,7 @@ a:focus {
 
 .main-nav-two__social a:hover {
 	color: var(--thm-base);
+	transform: scale(1.2);
 }
 
 .main-nav-two__social a+a {
