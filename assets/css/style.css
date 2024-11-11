@@ -2866,7 +2866,7 @@ a:focus {
 	        clip-path: polygon(50% 0%, 80% 0, 100% 20%, 100% 100%, 0 100%, 0 0);
 	padding-left: 60px;
 	padding-right: 60px;
-	padding-top: 65px;
+	padding-top: 25px;
 }
 
 .cta-four__image-content::before {
