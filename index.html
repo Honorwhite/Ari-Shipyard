@@ -38,10 +38,14 @@
         }
 
         /* Logo */
-        .logo {
-            position: absolute;
-            top: 0px; /* Üstten mesafe */
+        .logogiris {
             z-index: 2; /* Videonun ve butonların üstünde olmasını sağlar */
+            max-width: 200px;
+        }
+        @media(max-width: 992px) {
+            .logogiris {
+                padding-bottom: 20%;
+            }
         }
 
         .container {
@@ -79,7 +83,7 @@
     </video>
 
     <!-- Logo -->
-    <img src="assets/images/logo-3-1.png" alt="Ari Shipyard Logo" class="logo" style="max-width: 200px; margin-top: 10%;">
+    <img src="assets/images/logo-3-1.png" alt="Ari Shipyard Logo" class="logogiris">
 
     <!-- Butonlar -->
     <div class="h3">We Strongly Believe In Providing <br> <span style="color: var(--thm-primary);">Perfect Service To Our Customers!</span></h3>
