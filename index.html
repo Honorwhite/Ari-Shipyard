@@ -26,7 +26,6 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             overflow: hidden;
             position: relative;
@@ -34,17 +33,24 @@
         /* Video arka plan */
         .background-video {
             filter: brightness(0.2) blur(5px);
+            scale: 120%;
             overflow: hidden;
+            align-items: center;
+            position: absolute;
         }
 
         /* Logo */
         .logogiris {
             z-index: 2; /* Videonun ve butonların üstünde olmasını sağlar */
             max-width: 200px;
+            margin-top: 10%;
+            margin-bottom: 5%;
         }
         @media(max-width: 992px) {
             .logogiris {
-                padding-bottom: 20%;
+                max-height: 13%;
+                margin-top: 20%;
+                margin-bottom: 5%;
             }
         }
 
@@ -87,7 +93,7 @@
 
     <!-- Butonlar -->
     <div class="h3">We Strongly Believe In Providing <br> <span style="color: var(--thm-primary);">Perfect Service To Our Customers!</span></h3>
-    <div class="container">
+    <div class="container" >
         <a href="home.html" class="thm-btn cta-two__btn" style="display: flex; align-items: center; justify-content: center;">HOME</a>
         <a href="about-us.html" class="thm-btn cta-two__btn">Why Choose Us?</a>
     </div>
